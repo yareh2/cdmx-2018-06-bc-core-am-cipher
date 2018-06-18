@@ -1,19 +1,23 @@
 
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
 
-    <!DOCTYPE html>
+  <!DOCTYPE html>
     <html>
       <head>
         <meta charset="utf-8">
         <title>Caesar Cipher</title>
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="fonts/style(2).css">
+
       </head>
       <body>
-           <h1>CIFRADO CESAR!!!!</h1>
+          <div class="titulo"><h1><br>
+            <span class="icon-star"></span>CIFRADO CESAR!!!!</h1></div>
 
-      <label>Ingresa tu palabra</label>
-       <input type="text" value=""id="example" placeholder="Palabra" name="example" required>
+          <hr>
+
+
+      <label>Ingresa tu el texto a cifrar</label><br>
+      <textarea name="example" rows="8" cols="80"id="example"></textarea>
+
           <br>
           <br>
           <labe>Ingresa el numero
@@ -21,11 +25,12 @@
           </label>
           <br>
           <br>
-       <input type="text"id="cifrar" name="cifrar" value="">
+
+       <textarea type= tex name="cifrar" rows="8" cols="80"id="cifrar"value=""></textarea>
           <br>
           <br>
-       <button onclick="myFunction()" name="button">Cifrar</button>
-       <button onclick="encode()" name="button">Decifrar</button>
+       <button onclick="cifrarmensaje()" name="button">Cifrar</button>
+       <button onclick="decifrarm()" name="button">Decifrar</button>
 
        <script src="cipher.js"></script>
        <script src="index.js"></script>
