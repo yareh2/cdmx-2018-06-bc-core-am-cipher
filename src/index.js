@@ -1,4 +1,3 @@
-
 const cifrarmensaje = () =>{
 
 /*let string=cifrar.value;
@@ -8,21 +7,18 @@ let offset1 =offset1.value;*/
   let offset1=document.getElementById("offset1").value;
   let resultado =document.getElementById("cifrar").value;
   //console.log(offset1)
-  resultado.value = window.cipher.encode(string,parseInt(offset1));
+   window.cipher.encode(string,parseInt(offset1));
 
-}
+};
 
+const decifrarm = () =>{
+  let decifrar=document.getElementById("example").value;
+  let offset=document.getElementById("offset1").value;
+  let resultado =document.getElementById("cifrar").value;
 
+window.cipher.decode(decifrar,parseInt(offset));
 
-
-
-
-
-
-
-
-
-
+};
 
 
 

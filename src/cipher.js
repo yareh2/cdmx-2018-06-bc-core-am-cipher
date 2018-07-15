@@ -1,4 +1,3 @@
-
 window.cipher={
 
   encode:(string,offset)=>{
@@ -26,11 +25,47 @@ window.cipher={
     else if(posicionscii==32){
       console.log(posicionscii);
       scii2+=String.fromCharCode(posicionscii);
-      console.log(scii2);
+      //console.log(scii2);
        }
 
 //console.log(scii2);
      }
-     return document.getElementById('cifrar').value =scii2;
+     return document.getElementById("cifrar").value = scii2;
+},
+
+decode: (decifrar,offset)=>{
+
+  let decifrarMensaje="";
+  let posicionscii =0;
+
+
+for(let i=0;i<decifrar.length;i++){
+  let posicionscii=decifrar.charCodeAt(i);
+  if (65<=posicionscii && posicionscii<=90){
+
+  let posicion2=((posicionscii-65-parseInt(offset))% 26 + 65);
+  //console.log(posicion2);
+  let posicionscii2=String.fromCharCode(posicion2);
+
+decifrarMensaje+=posicionscii2;
+  }
+  else if (posicionscii>=97&& posicionscii<=122){
+    let posicion2=((posicionscii-122-parseInt(offset))% 26 + 122);
+    let posicionscii2=String.fromCharCode(posicion2);
+    console.log(posicionscii2);
+  decifrarMensaje+=posicionscii2;
+
 }
+else if(posicionscii==32){
+  decifrarMensaje+=String.fromCharCode(posicionscii);
+  console.log(decifrarMensaje);
+   }
+
+ }
+
+ return document.getElementById('cifrar').value =decifrarMensaje;
+}
+
+
+ //document.getElementById('example').value =decifrarMensaje;
 }
