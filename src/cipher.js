@@ -33,14 +33,14 @@ window.cipher={
      return document.getElementById("cifrar").value = scii2;
 },
 
-decode: (decifrar,offset)=>{
+decode: (string1,offset)=>{
 
   let decifrarMensaje="";
   let posicionscii =0;
 
 
-for(let i=0;i<decifrar.length;i++){
-  let posicionscii=decifrar.charCodeAt(i);
+for(let i=0;i<string1.length;i++){
+  let posicionscii=string1.charCodeAt(i);
   if (65<=posicionscii && posicionscii<=90){
 
   let posicion2=((posicionscii-65-parseInt(offset))% 26 + 65);

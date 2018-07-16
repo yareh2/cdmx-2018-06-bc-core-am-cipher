@@ -12,7 +12,7 @@ let offset1 =offset1.value;*/
 };
 
 const decifrarm = () =>{
-  let decifrar=document.getElementById("example").value;
+  let string=document.getElementById("example").value;
   let offset=document.getElementById("offset1").value;
   let resultado =document.getElementById("cifrar").value;
 
