@@ -1,14 +1,14 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 .titulo h1{
   background: #48C9B0;
   height: 50px;
   width: 100%;
   text-align: center;
 }
-hr{
-  height: 10px;
-  background: black;
+
+
+
+label {
+  text-align: center;
+  margin: 50px;
 }
